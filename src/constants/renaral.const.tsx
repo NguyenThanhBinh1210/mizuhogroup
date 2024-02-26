@@ -1,82 +1,82 @@
 export const MenuData = [
   {
-    path: '/',
+    url: '/',
     title: 'Chúng ta là ai',
-    children: [
+    submenu: [
       {
-        path: '/',
+        url: '/',
         title: 'Doanh nghiệp của chúng tôi',
-        children: [
+        submenu: [
           {
-            path: '/',
+            url: '/',
             title: 'Ngân hàng Mizuho'
           },
           {
-            path: '/',
+            url: '/',
             title: 'Mizuho Trust & Ngân hàng'
           },
           {
-            path: '/',
+            url: '/',
             title: 'Chứng khoán Mizuho'
           },
           {
-            path: '/',
+            url: '/',
             title: 'Viện nghiên cứu Mizuho'
           },
           {
-            path: '/',
+            url: '/',
             title: 'Viện nghiên cứu và thông tin Mizuho'
           }
         ]
       },
       {
-        path: '/',
+        url: '/',
         title: 'Bản sắc doanh nghiệp của chúng tôi'
       },
       {
-        path: '/',
+        url: '/',
         title: 'Lịch sử của chúng tôi'
       },
       {
-        path: '/',
+        url: '/',
         title: 'Điểm mạnh của chúng tôi'
       },
       {
-        path: '/',
+        url: '/',
         title: 'Chiến lược của chúng tôi'
       },
       {
-        path: '/',
+        url: '/',
         title: 'giải thưởng'
       },
       {
-        path: '/',
+        url: '/',
         title: 'Thông tin công ty'
       },
       {
-        path: '/',
+        url: '/',
         title: 'Quản trị'
       }
     ]
   },
   {
-    path: '/',
+    url: '/',
     title: 'Chúng ta làm gì'
   },
   {
-    path: '/',
+    url: '/',
     title: 'Vùng'
   },
   {
-    path: '/',
+    url: '/',
     title: 'Tin tức'
   },
   {
-    path: '/',
+    url: '/',
     title: 'Quan hệ đầu tư'
   },
   {
-    path: '/',
+    url: '/',
     title: 'Sự bền vững'
   }
 ]
