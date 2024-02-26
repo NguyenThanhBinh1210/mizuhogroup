@@ -5,7 +5,7 @@ import Menu from '../menu/Menu'
 
 const Header = () => {
   return (
-    <div className='border-b'>
+    <div className='border-b fixed w-full h-max top-0 left-0 z-10 bg-white'>
       <div className='max-w-[1440px] lg:px-[72px] px-[48px] mx-auto'>
         <div className='flex justify-end gap-x-6 py-2'>
           <Link className='text-xs text-[#5f6a6f]' to={'/'}>

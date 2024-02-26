@@ -38,7 +38,7 @@ const MenuItems = ({ items, depthLevel }: any) => {
 
   return (
     <li
-      className='menu-items'
+      className={`menu-items group  ${depthLevel > 0 ? '!text-[14px] !leading-3' : '!text-lg'}`}
       ref={ref}
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
@@ -55,9 +55,35 @@ const MenuItems = ({ items, depthLevel }: any) => {
             {window.innerWidth < 960 && depthLevel === 0 ? items.title : <Link to={items.url}>{items.title}</Link>}
 
             {depthLevel > 0 && window.innerWidth < 960 ? null : depthLevel > 0 && window.innerWidth > 960 ? (
-              <span>&raquo;</span>
+              <svg
+                className='text-red-600 w-[17px] h-[17px]  ml-2'
+                aria-hidden='true'
+                xmlns='http://www.w3.org/2000/svg'
+                fill='none'
+                viewBox='0 0 24 24'
+              >
+                <path
+                  stroke='currentColor'
+                  strokeLinecap='round'
+                  strokeLinejoin='round'
+                  strokeWidth='2'
+                  d='m9 5 7 7-7 7'
+                />
+              </svg>
             ) : (
-              <span className='arrow' />
+              <svg
+                className='w-[16px] h-[16px] text-red-600 ml-1 group-hover:-rotate-180 transition-all'
+                aria-hidden='true'
+                xmlns='http://www.w3.org/2000/svg'
+                fill='currentColor'
+                viewBox='0 0 24 24'
+              >
+                <path
+                  fill-rule='evenodd'
+                  d='M18.4 10.3A2 2 0 0 0 17 7H7a2 2 0 0 0-1.5 3.3l4.9 5.9a2 2 0 0 0 3 0l5-6Z'
+                  clip-rule='evenodd'
+                />
+              </svg>
             )}
           </button>
           <Dropdown depthLevel={depthLevel} submenus={items.submenu} dropdown={dropdown} />
@@ -67,6 +93,7 @@ const MenuItems = ({ items, depthLevel }: any) => {
           <button
             type='button'
             aria-haspopup='menu'
+            className=''
             aria-expanded={dropdown ? 'true' : 'false'}
             onClick={() => setDropdown((prev) => !prev)}
           >
@@ -76,6 +103,9 @@ const MenuItems = ({ items, depthLevel }: any) => {
         </>
       ) : (
         <Link to={items.url}>{items.title}</Link>
+      )}
+      {depthLevel === 0 && (
+        <div className='bg-red-600 w-0 transition-all duration-300 group-hover:w-[90%] left-1/2 -translate-x-1/2 h-0.5 top-full -translate-y-2 absolute'></div>
       )}
     </li>
   )

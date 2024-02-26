@@ -60,19 +60,19 @@ const Footer = () => {
             </div>
           </div>
           <div className='col-span-3 md:col-span-1 md:pl-10 mt-5 md:mt-0 md:border-l pb-5 border-b md:pb-0 md:border-b-0'>
-            <Link to={'/'} className='hover:underline mb-2.5 block'>
+            <Link to={'/privacy'} className='hover:underline mb-2.5 block'>
               Chính sách bảo mật
             </Link>
-            <Link to={'/'} className='hover:underline mb-2.5 block'>
+            <Link to={'/notice'} className='hover:underline mb-2.5 block'>
               Các điều khoản và điều kiện
             </Link>
-            <Link to={'/'} className='hover:underline mb-2.5 block'>
+            <Link to={'/socialmedia'} className='hover:underline mb-2.5 block'>
               Tiết lộ chính sách
             </Link>
-            <Link to={'/'} className='hover:underline mb-2.5 block'>
+            <Link to={'/socialmedia'} className='hover:underline mb-2.5 block'>
               Chính sách truyền thông xã hội
             </Link>
-            <Link to={'/'} className='hover:underline mb-2.5 block'>
+            <Link to={'/laundering'} className='hover:underline mb-2.5 block'>
               Chính sách chống rửa tiền
             </Link>
           </div>
