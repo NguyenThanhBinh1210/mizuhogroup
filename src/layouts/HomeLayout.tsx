@@ -6,7 +6,7 @@ const HomeLayout = ({ children }: LayoutPropsInterface) => {
   return (
     <div>
       <Header></Header>
-      <div className='mt-[100px]'>{children}</div> <Footer></Footer>{' '}
+      <div className='mt-[68px] lg:mt-[100px]'>{children}</div> <Footer></Footer>{' '}
     </div>
   )
 }

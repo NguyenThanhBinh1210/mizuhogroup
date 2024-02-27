@@ -6,17 +6,17 @@ const Featured2Data = [
   {
     path: '/',
     image: image1,
-    title: 'Transformation through digitalization'
+    title: 'Chuyển đổi thông qua số hóa'
   },
   {
     path: '/',
     image: image2,
-    title: 'Giving back in the Americas   '
+    title: 'Trả lại ở châu Mỹ'
   },
   {
     path: '/',
     image: image3,
-    title: 'Inclusion in EMEA'
+    title: 'Đưa vào EMEA'
   }
 ]
 const Featured2 = () => {
@@ -34,7 +34,7 @@ const Featured2 = () => {
             </div>
             <p className='text-primary text-xl my-3'>{item.title} </p>
             <Link className='font-bold text-primary group-hover:underline' to={'/'}>
-              Learn more
+              Tìm hiểu thêm
             </Link>
           </div>
         ))}

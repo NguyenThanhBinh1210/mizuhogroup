@@ -4,36 +4,36 @@ import image2 from '~/assets/images/mizuhoglobal_Desktop2.jpg'
 import image3 from '~/assets/images/mizuhoglobal_Desktop3.jpg'
 const FeaturedData = [
   {
-    title: 'ESG Milestones',
+    title: 'Các cột mốc quan trọng',
     path: '/',
     img: image1,
     content: (
       <ul className='!list-disc'>
-        <li className='block text-primary cursor-pointer leading-7'>Group CSuO message</li>
-        <li className='block text-primary cursor-pointer leading-7'>Latest ESG updates</li>
+        <li className='block text-primary cursor-pointer leading-7'>Thông điệp nhóm CSuO</li>
+        <li className='block text-primary cursor-pointer leading-7'>Cập nhật ESG mới nhất</li>
       </ul>
     )
   },
   {
-    title: 'ESG Milestones',
+    title: 'Lịch sử',
     path: '/',
     img: image2,
     content: (
       <div className='font-thin'>
-        In Japanese, mizuho means "a fresh harvest of rice," and our name expresses our continuing commitment to offer
-        highly valuable financial products and services to all of our customers, all over the world.{' '}
+        Trong tiếng Nhật, mizuho có nghĩa là "mùa thu hoạch lúa tươi" và tên của chúng tôi thể hiện cam kết không ngừng
+        cung cấp các sản phẩm và dịch vụ tài chính có giá trị cao cho tất cả khách hàng trên toàn thế giới.
       </div>
     )
   },
   {
-    title: 'ESG Milestones',
+    title: 'Bản sắc doanh nghiệp',
     path: '/',
     img: image3,
     content: (
       <div className='font-thin'>
-        We bring fruitfulness to all of our stakeholders and contribute to the prosperity of economies and societies
-        throughout the world, by bringing together our group–wide expertise and conducting business activities and
-        operations rooted in this concept.
+        Chúng tôi mang lại lợi ích cho tất cả các bên liên quan và đóng góp vào sự thịnh vượng của các nền kinh tế và xã
+        hội trên toàn thế giới bằng cách tập hợp kiến thức chuyên môn của toàn tập đoàn và tiến hành các hoạt động kinh
+        doanh bắt nguồn từ khái niệm này.
       </div>
     )
   }
@@ -57,7 +57,7 @@ const Featured = () => {
               to={item.path}
               className='text-primary hover:underline font-bold mt-auto invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-500'
             >
-              Discover more
+              Khám phá nhiều hơn
             </Link>
           </div>
         </div>
